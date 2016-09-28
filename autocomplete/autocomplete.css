@@ -1,0 +1,74 @@
+
+.ui-autocomplete  a{
+    /*color:#red;*/
+display: inline-block;
+    width: auto;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.6em;
+    height:14px;
+    padding:2px;
+    border:none;
+    font-style: italic;
+    background-color: white;
+
+}
+
+.ui-autocomplete  a:hover{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.6em;
+    height:14px;
+    border:none;
+    padding:2px;
+    font-style: italic;
+}
+/* highlight results */
+.ui-autocomplete span.hl_results {
+    background-color: white;
+    border:NONE;
+    /*border:1px solid black;*/
+}
+ 
+/* loading - the AJAX indicator */
+.ui-autocomplete-loading {
+    /*background: white url('../images/ui-anim_basic_16x16.gif') center center no-repeat;*/
+}
+ 
+/* scroll results */
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding for vertical scrollbar */
+    /*padding-right: 5px;*/
+    padding:0;
+    line-height: 1.6em;
+    font-size: 11px;
+    background-color: white;
+
+}
+ 
+.ui-autocomplete li {
+    font-size: 11px;
+    border:none;
+background-color: white;
+    padding:4px;
+    border-bottom:1px dashed #eee;
+}
+
+
+ 
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 250px;
+    background-color: white;
+
+}
+.ui-autocomplete-input{
+    /*color:black;*/
+    background-color: none;
+}

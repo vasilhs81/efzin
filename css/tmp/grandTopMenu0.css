@@ -1,0 +1,218 @@
+.grandDestinationsMenu
+{
+	/*width: 940px;*/
+	width: 200px;
+    height: 43px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-top-color: #002232;
+	border-right-color: #002232;
+	border-bottom-color: #002232;
+	border-left-color: #002232;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: inset 0px 0px 1px #edf9ff;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgb(1, 68, 100);
+}
+.grandDestinationsMenu li
+{
+	text-align: center;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	margin-top: 7px;
+	margin-right: 30px;
+	/*border-top-color: currentColor;
+	border-right-color: currentColor;
+	border-bottom-color: currentColor;
+	border-left-color: currentColor;*/
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	float: left;
+	display: block;
+	position: relative;
+}
+.grandDestinationsMenu li a
+{
+	/*color: #eeeeee;*/
+	font-family: Arial, Helvetica, sans-serif;
+    color:white;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	outline-width: 0px;
+	outline-style: none;
+	outline-color: invert;
+}
+.grandDestinationsMenu li .drop
+{
+	padding-right: 21px;
+	background-image: url("img/drop.png");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 8px;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: transparent;
+}
+.dropdown_1column, .dropdown_2columns, .dropdown_3columns, .dropdown_4columns, .dropdown_5columns
+{
+	left: -999em;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	margin-top: 4px;
+	margin-right: auto;
+	margin-bottom: 4px;
+	margin-left: auto;
+	border-top-color: red;
+	border-right-color: #777777;
+	border-bottom-color: #777777;
+	border-left-color: #777777;
+	border-top-width: medium;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	float: left;
+	position: absolute;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgb(244, 244, 244);
+}
+.dropdown_4columns
+{
+	/*width: 560px;*/
+    width: 200px;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5
+{
+	margin-right: 5px;
+	margin-left: 5px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+.col_1
+{
+	width: 130px;
+}
+.col_4
+{
+	width: 550px;
+}
+.grandDestinationsMenu p, .grandDestinationsMenu h2, .grandDestinationsMenu h3, .grandDestinationsMenu ul li
+{
+	text-align: left;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.grandDestinationsMenu h2
+{
+	letter-spacing: -1px;
+	padding-bottom: 14px;
+	font-size: 21px;
+	font-weight: 400;
+	margin-top: 7px;
+	margin-right: 0px;
+	margin-bottom: 14px;
+	margin-left: 0px;
+	border-bottom-color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.grandDestinationsMenu h3
+{
+	padding-bottom: 7px;
+	font-size: 14px;
+	margin-top: 7px;
+	margin-right: 0px;
+	margin-bottom: 14px;
+	margin-left: 0px;
+	border-bottom-color: #888888;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.grandDestinationsMenu li ul
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 12px;
+	margin-left: 0px;
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: none;
+}
+.grandDestinationsMenu li ul li
+{
+	width: 130px;
+	text-align: left;
+	line-height: 24px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	float: none;
+	position: relative;
+}

@@ -1,0 +1,29 @@
+#switcher{width: 100%;background-color:#eee9e9;height:50px;border-bottom:4px double #b9c3cc;}
+#switcher_inner{margin:0 auto;width: 960px;}
+#switcher_right img{ border:1px solid #e7e0e0;margin:14px 1px 1px 1px;}
+#switcher_left { float:left;width: 65%;height:54px;}
+#switcher_right { float:left;width: 35%; height:54px;}
+.logogorilla{float:left;}
+.colortext{float:left;}
+.colortext img{ border:5px solid #e7e0e0;}
+.button{
+	padding-top:10px;padding-left:20px;
+	width: 211px;
+	height: 34px;
+	display:block;
+	background:url(http://gorillathemes.com/demo/colors/freetheme.jpg) center no-repeat;
+	background-position: 0 6px;
+	float: right;
+}
+.button:hover{
+	padding-top:10px;padding-left:20px;
+	width: 211px;
+	height: 34px;
+	display:block;
+	background:url(http://gorillathemes.com/demo/colors/freetheme.jpg) center no-repeat;
+	background-position: 0 -35px;
+	float: right;
+	cursor: pointer;
+}
+#switcher_lang{float: left;}
+#switcher_lang img{margin-top:15px;padding:0 2px;}

@@ -1,0 +1,279 @@
+.self-clear p {
+line-height: 1.8em;
+margin-bottom: 20px;
+}
+.self-clear p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+
+#track-details {
+/*width: 350px;*/
+/*padding: 20px 0;*/
+/*border-top: 1px #ccc dashed;*/
+/*border-bottom: 1px #ccc dashed;*/
+/*margin-bottom: 30px;*/
+/*margin-right: 15px;*/
+/*position: relative;*/
+/*height: 115px;*/
+}
+
+#track-details p{
+    padding:4px;
+}
+
+
+#track-details .track span {
+font: 11px normal Verdana, Arial, Helvetica, Sans-Serif;
+}
+#track-details .track span.info {
+display: block;
+font-size: 12px;
+margin-top: 5px;
+}
+#track-details .price span.price-info {
+display: block;
+}
+
+.difficulty {
+background: url(images/easy.png) no-repeat;
+font-size: 11px;
+padding-bottom: 10px;
+margin-right: 100px;
+left: 0%;
+bottom: 20px;
+margin-bottom: 0 !important;
+background-position:right;
+/*
+background-position: right -454px;
+background-position-x: 100%;
+background-position-y: -454px;
+*/
+
+padding-right: 55px;
+
+
+}
+
+.difficulty span {
+font: bold 18px Georgia, "Times New Roman", Serif;
+display: block;
+}
+#track-details .track {
+font: 18px Georgia, "Times New Roman", Serif;
+font-weight: bold;
+left: 0%;
+top: 20px;
+}
+
+#track-details .track, #track-details .difficulty, #track-details .price, {
+position: absolute;
+}
+
+.price, .price del {
+/*color: #474747;*/
+price :#fff;
+font-size: 1.1em;
+}
+
+.sale-price {
+font-size: 2.5em;
+font-family: Georgia, "Times New Roman", Serif;
+/*color: #1b1b1b;*/
+color:white;
+font-weight: bold;
+}
+
+#track-details .price {
+right: 0%;
+top: 20px;
+margin-top: 0px;
+}
+
+book-button {
+/*color: #396070;*/
+color:white;
+-moz-box-shadow: #dedede 2px 2px 2px;
+-webkit-box-shadow: #dedede 2px 2px 2px;
+background: url(http://www.ultimatehikes.co.nz/images/interface/btn/btn-buttons.png) no-repeat;
+cursor: pointer;
+
+}
+.book-button span {
+background-position: 100% -679px;
+white-space: nowrap;
+/*
+padding-left: 20px;
+padding-right: 40px;
+*/
+text-transform: uppercase;
+font-size: 1.2em;
+/*height: 35px;*/
+padding-top: 15px;
+display: inline-block;
+color: #fff;
+font-weight: bold;
+font-family: Verdana, Arial, Helvetica, Sans-Serif;
+-webkit-border-bottom-right-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+/*width: auto;*/
+-webkit-box-shadow: #dedede 2px 2px 2px;
+}	
+.button {
+background: url(http://www.ultimatehikes.co.nz/images/interface/btn/btn-buttons.png) no-repeat;
+cursor: pointer;
+}	
+
+.book-button:hover span {
+background-position: 100% -629px;
+background-position-x: 100%;
+background-position-y: -629px;
+}
+.button:hover, .travel-agent-info a:hover {
+text-decoration: none;
+}
+
+
+/**************  Tabs related styles ***************/
+
+.tabs {
+
+/*
+display: block;
+width:100%;
+padding: 0;
+margin: 0;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+*/
+width: 600px;
+
+overflow: hidden;
+margin:0;
+padding: 0px;
+border-bottom: 1px solid #542613;
+
+/*border-top: 1px solid #60403a;*/
+
+/*
+margin-top: 15px;
+padding-top: 15px;
+*/
+display: block;
+list-style-type: disc;
+/*-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+*/text-align: left;
+/*color: #252525;*/
+color:white;
+font: 87.5% arial, helvetica, sans-serif;
+
+
+}
+
+
+.tabs li {
+/*
+list-style: none;
+list-style-type: none;
+list-style-position: initial;
+list-style-image: initial;
+display: inline;
+background:#666;
+text-align: -webkit-match-parent;
+padding: 0;
+margin: 0;
+*/
+
+margin: 0;
+padding: 0;
+display: list-item;
+text-align: -webkit-match-parent;
+font: 87.5% arial, helvetica, sans-serif;
+list-style: none;
+float: left;
+/*width: 180px;*/
+margin-right:9px;
+/*color: #252525;*/
+color:white;
+
+}
+
+.tabs li a{
+/*padding: 5px 10px;
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 10px;
+display: inline-block;
+background: #666;
+background-image: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-size: initial;
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: rgb(102, 102, 102);
+color: #fff;
+text-decoration: none;
+*/
+
+cursor: pointer;
+display: block;
+width: 125px;
+height: 20px;
+background-image: url(images/tab-bg.png);
+background-position: -280px 0px;
+background-size: initial;
+background-repeat:no-repeat;
+
+padding: 8px 3px 8px 13px;
+/*color: #3a3a3a;*/
+font-family:Georgia, "Times New Roman", Times, serif;
+color:white;
+font-size: 1.8em;
+letter-spacing: -1px;
+line-height:12px;
+font-weight: bold;
+text-decoration: none;
+
+}
+
+.tabs li a:hover{
+	background-image:url(images/tab-bg-hover.png);
+}
+/*.tabs li.selected span*/
+.tabs li a:active
+{
+	
+	background-position: 0 0; color: #fff;
+	
+}
+
+.tab{
+/*background-color:#67788C;*/
+background-image:url(images/mc/slider-desc.png);
+background-repeat:repeat-y;
+padding:15px;
+width:100%;
+/*background:gray;*/
+/*color:black;	*/
+
+}
+.tab h3{
+text-align:left;display:inline-block;font-size:26px;	
+}

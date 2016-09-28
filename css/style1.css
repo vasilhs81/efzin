@@ -1,0 +1,106 @@
+/*
+html, body
+{
+background-color:#fff;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:0px;
+    
+}
+table td{
+font-size:14px;	
+}
+
+a{
+color:#C93;
+font-weight:bold;
+text-decoration:none;
+
+}
+a:hover{
+text-decoration:underline;	
+	}
+
+*{
+    
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:12px;
+
+}
+*/
+
+.outerContainer{
+width:100%;
+height:890px; 
+/*background-image:url(../images/back.jpg);
+background-attachment:scroll;
+background-repeat:no-repeat;
+background-position-x:1px;
+*/
+/*background-position-y:0.35em;*/
+/*background-size:auto;
+background-origin:padding-box;
+background-clip:border-box;
+background-color:transparent;
+*/    
+}
+
+
+
+
+.innerContainer{
+margin-left:auto;
+margin-right:auto;
+
+margin-top:100px;
+
+
+background-color:#333333;
+filter: alpha(opacity=50); /* internet explorer */
+-khtml-opacity: 0.5;      /* khtml, old safari */
+-moz-opacity: 0.5;       /* mozilla, netscape */
+opacity: 0.5;           /* fx, safari, opera */
+/*background: rgba(225, 225, 225, .8)*/
+height:664px;
+width:80%;
+  
+    
+}
+
+
+.clear2{
+clear:both; 
+font-size:1px;
+height:4px;
+
+}
+
+
+
+
+
+.clear{
+clear:both; 
+font-size:1px;
+height:1px;
+
+}
+
+/*
+
+.slides_container {
+                width:570px;
+                height:270px;
+            }
+.slides_container div {
+                width:570px;
+                height:270px;
+                display:block;
+}
+*/
+
+.topContainer {
+	
+	
+	
+}

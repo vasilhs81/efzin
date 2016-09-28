@@ -1,0 +1,487 @@
+/* 
+CUSTOM STYLESHEET
+---------------------
+Instructions:
+
+Add your custom styles at the end of this file instead 
+of style.css so it is easier to update the theme. 
+Simply copy an existing style from style.css to this file, 
+and modify it to your liking.
+*/
+
+body { 
+	/* font: 14px/20px 'Century Gothic',  */
+	font-family: helvetica, arial, serif;
+	color:#333;
+}
+
+form h1,form h2,form h3,form h4,form h5,form h6,.highlight {
+	font-family: /* 'Century Gothic',  */ helvetica, arial, serif;
+	font-weight:bold;
+}
+
+#login {    background-image: url("http://ovrride.com/wp-content/themes/storefront-boutique/images/login_bg_pic.jpg");
+    background-repeat: repeat-x;    font: 11px "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;    padding-top: 20px; }
+
+/*-------------------------------------------------------------------------------------------
+	3. NAVIGATION */
+
+#navigation {margin-top:30px;}
+#main-nav {font-weight:bold; font-size:19px;/*margin-top:10px;*/font-family: 'Cuprum', arial, serif; font-weight:normal;position:relative;z-index:3;}
+#main-nav li {float:right;position:relative; display:block; position:relative; z-index:1;margin-left:5px;}
+#main-nav ul li {margin-left:0px;}
+#main-nav ul {position:absolute; left:0; display:none; padding:0; list-style:none;margin-top:-7px; padding:5px 0px;}
+#main-nav li a {display:block;padding: 10px 10px 7px;text-decoration:none;}
+#main-nav li.current_page_item a, #main-nav li:hover a, #main-nav ul li a {color:#ffffff;}
+#main-nav li.current-menu-item a, #main-nav li.current_page_item a, #main-nav li:hover a, #main-nav li ul {
+background: #2FA8FF !important;
+}
+#main-nav li a:hover {color:#ffffff;}
+#main-nav ul li {float:left;}
+#main-nav ul a {width:10em; border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;}
+#main-nav ul li a:hover {background:#8dd0ff /* 333 */;}
+#main-nav a {border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;}
+#main-nav ul, #main-nav ul ul {border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;}
+#main-nav ul li:hover ul {display:inline;margin-left:12em; margin-top:-48px;z-index:2;}
+#main-nav ul ul,#main-nav ul ul li {display:none;}
+#main-nav ul li:hover ul,#main-nav ul li:hover ul li {display:inline;}
+#main-nav ul ul li a:hover {z-index:10;position:relative;}
+#header a {
+	color: #fffeff;
+}
+#header-login {    padding-top: 20px;	top: 1px;	left: 675px;	position: absolute;	float: right;	color: #fffeff;	font-size: 12px;	text-decoration: none;
+}
+#header-search {    padding-top: 22px;	top: 1px;	left: 675px;	position: absolute;	float: left ;color: #fffeff;	font-size: 12px;	text-decoration: none; top: 19px; }
+
+input[type="text"],textarea,input { /* color: #999; */ }
+#searchform input {float:left; color: #999999; }
+#header a.shopping-cart-basket { margin-top: 22px; }
+.searchbtn {width:30px;height:30px;padding:0px;margin:0px;border:none;background:none;}
+
+
+/*-------------------------------------------------------------------------------------------
+	3. FOOTER */
+
+#footer {font-size: 14px; text-align: center; }
+#footer-left {float:left;margin: 0px 0px 0px 20px;}
+#footer-center { font-family: 'Cuprum', arial, serif; }
+#footer-right {float:right;}
+/*#footer-right {size: 12px;}*/
+.page-content {	float: left;}
+.page-sidebar {	float: right;}
+
+
+
+
+/* !Custom Styles for OVRRIDE.COM  */
+/* provided by : Anthony L. Rivera */
+#content { padding: 0 0 20px; }
+/* !Homepage ------------------------------------------------------------------------------ */
+
+#header-sidebar {
+    float: left;
+    text-align: center;
+    width: 320px;
+}
+
+#header-sidebar p {
+    float: right;
+    margin: 10px auto;
+    width: 320px;
+}
+
+.sft-framed-inner { overflow: hidden; }
+.sft-framed-inner > p, #calendar_cta { font-weight : bold; font-size: 14px; position: relative; top: 15px; display: block; float: none; text-align: center; width: 100%; }
+.sft-framed-inner > p a, #calendar_cta a { display: block; margin: 0 auto; }
+#calendar_cta a { margin: 0 auto 20px; }
+
+/* EVENTS CALENDAR PLUGIN */
+
+.sft-framed-inner #events_calendar {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    width: 320px;
+}
+.sft-framed-inner #events_calendar > div { margin: 0 auto; }
+.sft-framed-inner li { list-style: none; }
+
+.calnk a:hover > span {
+	/*background-color: #52A8E8;*/
+	background-color:rgb(114,72,55);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#52a8e8), to(#2FA9FF));
+	background-image: -webkit-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -moz-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -ms-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -o-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: linear-gradient(top, #52a8e8, #2FA9FF);
+    border: 2px solid #CCCCCC;
+    color: #FFFFFF;
+}
+.calendar-table td { text-align: center; }
+.calendar-table .event { font-size: 1em; }
+.day-with-date .calnk a { width: 100%; color: #FFFFFF !important; display: block; }
+
+.calnk a { padding: 4px 0; }
+#container .cat-key { border: none !important; }
+
+/*#events_calendar > h2 { text-align: center; width: ; }*/
+#events_calendar > div { margin: 0 auto; width: 225px; }
+
+#sidebar-calendar {
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #DFDFDF;
+    display: block;
+    margin: 20px;
+    padding: 10px 0;
+}
+
+div#sidebar table { width: 100%; margin: 0; }
+
+
+
+/* SOCIAL ICONS ---------------------------------------------------------------------------- */
+#social-icons {
+    float: left;
+    margin: 10px 0 0 55px;
+    width: 215px;
+}
+
+
+#content { margin: 20px 0 0 20px; }
+
+/* !Navigation ------------------------------------------------------------------------------ */
+#main-nav li#menu-item-127 { display: none; } /* HIDING THE FORUM , NOT STYLED YET */
+
+/* !Home - Upcoming ------------------------------------------------------------------------------ */
+#home-upcoming { width: 580px; float: left; padding: 0 0 0 20px; }
+#home-upcoming h2 { margin: 20px 0 5px 10px; font-size: 30px; }
+
+.upcoming { overflow: hidden; clear: both; border-bottom: 1px dashed #f1f1f1; margin: 0; padding: 0 0 5px 0; height: 72px; }
+.upcoming img { border: 4px solid #dfdfdf !important; float: left; margin: 10px !important; }
+.upcoming a  { width: 200px; font-size: 17px; }
+.upcoming_text { position: relative; top: 10px; }
+
+#container .upcoming .wpsc_buy_button_container {
+    background: none;
+    border-radius: 10px 10px 10px 10px;
+    clear: right;
+    float: right;
+    padding: 4px 15px 0 0 !important;
+    width: 117px !important;
+    margin: 0 0 10px 0;
+    height: 65px;
+    position: relative; 
+    top: -10px;
+}
+.upcoming .wpsc_buy_button {
+    float: right;
+    font-size: 12px;
+    padding: 2px 4px !important;
+    width: 100px;
+}
+
+
+/* !HOME - TABS  */
+
+#deadline .ui-tabs-nav li { width: 74px; float: left; padding: 1px 14px 0px 1px !important; }
+.ui-tabs .ui-tabs-nav li a {
+    display: block;
+    font-size: 12px;
+    height: 34px;
+    padding: 0px !important;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal !important;
+	width: 89px;
+}
+
+.parent-pageid-98 .ui-tabs-nav a { height: 24px; }
+
+#deadline div img { margin: 10px; border: 3px solid #DFDFDF; }
+
+.product_description .ui-tabs-nav a { height: 25px; }
+
+/* !Sidebar ------------------------------------------------------------------------------ */
+#sidebar { width: 310px; float: right; display: block; margin: 20px 0 0 0; }
+
+#sidebar .widget { margin: 0px auto; display: block; }
+
+.textwidget { margin: 20px auto; }
+
+.widget input[type="radio"] { margin: 5px 10px 0 3px; }
+
+#constant-contact{
+	width: 280px; 
+	background: #FFFFFF;
+	border : 1px solid #dfdfdf;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 5px;
+	margin: 0 0 20px;
+	overflow: hidden;
+}
+#constant-contact input[type="text"] {
+	width: 220px; 
+	float: left;
+	margin: 5px 10px 5px 0;
+}
+#constant-contact input[type="submit"] {
+	padding: 3px !important; 
+	float: left;
+	margin: 5px 0 0 0;
+}
+
+.calendar-button {
+	/*background-color: #52A8E8;*/
+	background-color:rgb(114,72,55);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#52a8e8), to(#2FA9FF));
+	background-image: -webkit-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -moz-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -ms-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: -o-linear-gradient(top, #52a8e8, #2FA9FF);
+	background-image: linear-gradient(top, #52a8e8, #2FA9FF);
+	border-top: 1px solid #4081AF;
+	border-right: 1px solid #2E69A3;
+	border-bottom: 1px solid #20559A;
+	border-left: 1px solid #2E69A3;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	-o-border-radius: 16px;
+	border-radius: 16px;
+	-webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	-moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	-ms-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	-o-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	font: normal 11px "lucida grande", sans-serif;
+	line-height: 1;
+	padding: 3px 5px;
+	text-align: center;
+	text-shadow: 0 -1px 1px #3275BC;
+	width: 220px;
+	-webkit-background-clip: padding-box;
+	margin: 10px 0;
+	color: #FFFFFF !important;
+}
+
+/* !PAGE.PHP Styles ---------------------------------------------------------------------*/
+#content .one-column-content { width: 580px; float: left; margin: 20px; }
+#content .one-column-content img { border: 2px solid #dfdfdf; }
+.one-column-content .alignleft, .one-column-content .alignright { margin: 10px 20px 10px 10px; }
+
+#content hr, #container hr { color: #DFDFDF; border: 1px double; }
+
+#tabs #rates { overflow: hidden; }
+#tabs #bus-times { overflow: hidden; }
+
+/* !Blog ------------------------------------------------------------------------------ */
+#blog-category { width : 580px; float: left; margin: 20px; }
+#blog-category .img { width : 150px; height : 150px; float: right; /* margin: 20px;  */ border: 3px solid #dfdfdf; overflow: hidden; display: block;  }
+#blog-category img { /* width : 150px; height: auto; */ }
+
+.blog-post .entry p {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 15px; }
+    
+
+/* !Contact ------------------------------------------------------------------------------ */
+#page-21 { width: 580px; float: left; margin: 0 0 0 10px; }
+
+#page-21 .entry p { float: none; text-align: left; font-size: 16px; }
+
+.wpcf7-form p { font-weight : bold; }
+
+
+/* !BOOK  A TRIP ------------------------------------------------------------------------------ */
+#page-98 { width: 580px; float: left; margin: 0 0 0 10px; }
+#page-98 ul.box, #page-8687 ul.box { margin: 0 0 30px 0; padding: 0; width: 580px;}
+#page-98 .entry img { border: 1px solid #DFDFDF; }
+.book-trip {
+    background: #EFEFEF;
+    float: left;
+    list-style: none;
+    margin: 10px;
+    padding: 10px 5px 5px;
+    text-align: center;
+    width: 160px;
+    position: relative;
+}
+
+ul.box {
+	position: relative;
+	z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+	overflow: hidden;
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+
+
+ul.box li {
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 180px;
+	padding: 10px 11px 10px 10px;
+	border: 1px solid #efefef;
+	margin: 10px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+
+ul.box li:before,
+ul.box li:after {
+content: '';
+z-index: -1;
+position: absolute;
+left: 10px;
+bottom: 10px;
+width: 70%;
+max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+height: 55%;
+-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+-webkit-transform: skew(-15deg) rotate(-6deg);
+-moz-transform: skew(-15deg) rotate(-6deg);
+-ms-transform: skew(-15deg) rotate(-6deg);
+-o-transform: skew(-15deg) rotate(-6deg);
+transform: skew(-15deg) rotate(-6deg); }
+
+
+ul.box li:after {
+left: auto;
+right: 10px;
+-webkit-transform: skew(15deg) rotate(6deg);
+-moz-transform: skew(15deg) rotate(6deg);
+-ms-transform: skew(15deg) rotate(6deg);
+-o-transform: skew(15deg) rotate(6deg);
+transform: skew(15deg) rotate(6deg); }
+
+
+#content .book-trip a { color: #111; }
+#content .book-trip:hover h3 a { color : #2FA8FF; }
+/* !BOOK - DETAIL ------------------------------------------------------------------------------ */
+
+/* SINGLE PRODUCT PAGE */
+div.productcol { width: 580px !important; }
+
+.productcol .custom_meta { display: none; }
+
+.productcol #custom_fields { }
+
+form.product_form { overflow: hidden; margin: 0 0 0 10px; float:left; }
+
+.product_form .sft-productfield {
+	width: 555px; clear: left; float: left;
+}
+
+.sft-productfieldtitle {
+	display: none;
+}
+
+#container .imagecol { float: left; border: none !important; padding: 10px; margin: 0 10px 10px 0; }
+#container .product_description {
+    float: left;
+    margin: 30px 0 0 0px;
+    width: 580px;
+}
+
+.one-column-content img { max-width: 587px; height: auto; }
+
+#container .wpsc_product_price {
+    background: none repeat scroll 0 0 #f1f1f1;
+    float: right;
+    padding: 15px 20px 0 0;
+    text-align: right;
+    width: 165px;
+    border-radius: 10px 10px 0 0;
+}
+
+.wpsc_quantity_update { float: right;   text-align: left; }	
+
+#default_products_page_container .default_product_display { height: 220px; }
+.default_product_display h2.prodtitle {
+    font-size: 17px;
+    padding-bottom: 0;
+    width: 150px;
+}
+
+.single-wpsc-product #content div.one-column-content { width: 580px !important; }
+.single-wpsc-product #content div.productcol {  }
+
+/* .in_stock { display: none; } */
+
+#container .wpsc_buy_button_container {
+    background: none repeat scroll 0 0 #F1F1F1;
+    clear: right;
+    float: right;
+    padding: 0 20px 0 0;
+    width: 165px;
+    border-radius: 0 0 10px 10px;
+}
+
+.pds-links .pds-pd-link { display: none !important; }
+.pds-box { width:290px !important;  }
+.pds-answer-input {
+    display: block;
+    float: left;
+    width: 21px !important;
+}
+
+/* !WEATHER ------------------------------------------------------------------------------------------- */
+
+
+.weather { display: block; /* border-bottom: 1px solid #dfdfdf; */ padding: 0; margin: 0; overflow: hidden; }
+.weather > img { float: left; margin: 10px 10px 0 0; }
+.weather > h3 { padding: 0 0 0 10px; font-size: 2em; background: #67c4f0; border-radius: 5px; padding: 5px 2px 0 10px; color: #FFFFFF; }
+.weather a { font-weight : bold; font-size: 16px; width: 165px; color: #476FA2 !important; }
+.weather a:hover { text-decoration: underline; }
+
+.todayTemp, .tomTemp { float: left; width: 100px; border: 1px solid #dfdfdf; padding: 5px 0px; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin: 10px; height: 165px; }
+.todayTemp h3, .tomTemp h3 { border-bottom: 1px solid #dfdfdf; padding: 0; }
+.todayTemp img, .tomTemp img { display: block; margin: 0 auto; }
+.todayTemp .text, .tomTemp .text {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
+.todayTemp .temp, .tomTemp .temp {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+.mtn_logo { width: 200px; display: block; float: left;  margin: 10px 10px 0 0; }
+.mtn_logo a { margin: 15px 0 0 0; float: left; }
+
+/* DYNAMIC CONTENT GALLERY SLIDER  */
+#dfcg-outer-wrapper { width: 580px; float: left; }
+#dfcg-text p { top: 0; text-align: left; }
+.dfcg-carouselBtn, #dfcg-sliderInfo { color: #d2ff34 !important; }
+.dfcg-carouselBtn { -webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px; }
+
+
+
+/* FAQ - ACCORDION STYLES  */
+
+#accordion h3 { color: #111; font-size: 16px !important; font-weight: normal !important; padding: 5px; font-family: Arial, sans-serif !important;}
+
+#accordion h3 span { float: left; }
+
+#accordion .ui-widget-content { border: none !important; }
+
+#accordion div { height: auto !important; }
+
+#accordion div p { padding: 10px; margin: 10px 0; }
+
+

@@ -1,0 +1,99 @@
+.social-bottom-links {
+    list-style-type: none;
+    display: inline-block;
+    width:30px;
+    white-space: nowrap;
+    background-position: center;
+    font-size: 10px;
+}
+.social-bottom-links a{
+background-image: url(../images/bottom_images/ico-media.png);
+background-repeat: no-repeat;
+background-color: transparent;
+background-origin:padding-box;
+background-clip:border-box;
+display: inline-block;
+margin-left: 4px;
+cursor: pointer;
+width:25px;
+font-size: 10px;
+
+
+
+
+    }
+.social-bottom-links a span{
+    cursor: pointer;
+    overflow: hidden;
+    width:25px;
+    display: block;
+    font-size: 10px;
+}
+.facebook{
+    /*background-image: url(../images/bottom_images/ico-media.png);*/
+    background-position: 0px -48px;
+    /*background-position-x:0px;
+    background-position-y:-48px;*/
+}
+
+.social-bottom-links  .facebook:hover {
+    background-position: 0 -284px;
+    /*background-position-x:0 ;
+
+    background-position-y:-284px ;
+*/
+}
+
+.twitter{
+    background-position: 0 -145px;
+  /*  background-position-x:0px;
+    background-position-y:-145px;*/
+}
+
+.social-bottom-links  .twitter:hover {
+    background-position: 0 -381px;
+    /*background-position-x:0 ;
+    background-position-y:-381px ;*/
+
+}
+
+.flicker{
+    background-position: 0 0;
+    /*background-position-x:0px;
+    background-position-y:0px;*/
+}
+
+.social-bottom-links  .flicker:hover {
+    background-position: 0 -236px;
+    /*background-position-x:0 ;
+    background-position-y:-236px ;
+*/
+}
+
+/*.youtube{
+    background-position-x:0px;
+    background-position-y:-48px;
+}
+
+.social-bottom-links  .youtube:hover {
+    background-position-x:0 ;
+    background-position-y:-284px ;
+
+}*/
+
+.bottom-rounds{
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;  -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px; -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;behavior: url(../js/PIE.htc);
+    -moz-box-shadow: 1px 1px 4px #000; -webkit-box-shadow: 1px 1px 4px #000;
+    background:#2d2424; position:relative; z-index:55;
+    height:110px;
+    padding-top:20px;
+    padding-left:5px;
+margin-bottom:15px;
+    color:#bbb;
+    width: 100%;
+
+}
