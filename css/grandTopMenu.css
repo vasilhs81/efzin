@@ -8,7 +8,22 @@ body, ul, li {
 */
 
 .grandDestinationsMenu {
+    font-family:'Helvetica Neue', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    background-repeat: no-repeat;
+    list-style:none;
+    width:100%;
+    /*margin-left:5px;*/
+    height:50px;
+    float:left;
+    background: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    white-space: nowrap;
+    /*margin-bottom: 3px;*/
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
     border-collapse: collapse;
+
     /*margin:30px auto 0px auto;*/
 
     /*padding:0px 20px 0px 20px;*/
@@ -205,9 +220,11 @@ vertical-align: middle;
 .dropdown_1column {width: 250px;}
 .dropdown_2columns {width: 400px;}
 .dropdown_3columns {width: 420px;}
-.dropdown_4columns {width: 690px;}
+.dropdown_4columns {width: 690px; z-index: 10;}
 .dropdown_5columns {width: 700px;}
-
+.dropdown_4columns .hidden1{
+    display:none;
+}
 .grandDestinationsMenu li:hover .dropdown_1column,
 .grandDestinationsMenu li:hover .dropdown_2columns,
 .grandDestinationsMenu li:hover .dropdown_3columns,

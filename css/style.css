@@ -40,27 +40,130 @@ body {line-height: 1;}
     width:960px;left:50%;margin-left: -480px;position:absolute;
     height:120px;background: transparent;z-index:100;
 }
-.logo_img a{
+.logo_img_href{
     display:inline-block;margin-top: 10px;
 }
 
 .search_div_index{
     position:absolute;
-    top:230px;z-index:1;
+    top:230px;
+    z-index:1;
     left:645px;display:inline-block;
     white-space:nowrap;height:40px;float:left;
     width:480px;color:black;border:none;overflow: hidden;
-    z-index: 200;
+    /*z-index: 200;*/
 }
 
 .search_div_others{
     position:absolute;
-    top:110px;z-index:1;
+    top:110px;
+    z-index:1;
     left:645px;display:inline-block;
     white-space:nowrap;height:40px;float:left;
     width:480px;color:black;border:none;overflow: hidden;
-    z-index: 200;
+    /*z-index: 200;*/
 }
+.search_icon_href{
+    width: 22px;height: 22px;position:absolute;z-index:200;
+    left:875px;margin-top: 4px;
+}
+.search_icon_href #sicon{
+    opacity: 0.4;
+}
+
+.content_div{
+    width: 100%; float: left; top:130px;  position: absolute; z-index: 140;white-space: nowrap;
+    display: table;
+    clear: both;
+
+}
+.profile_li{
+    display: block;width:150px;height:50px;
+    position:absolute;left:50%;margin-left: -330px;
+    border-right:1px solid #ddd;color:rgb(2,58,92);float:left;line-height: 3.8em;text-align: center;
+}
+
+.home_li{
+    position: absolute;
+    left:50%;margin-left: -480px;
+    display: block;width:150px;height:50px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-collapse: collapse;
+    color:rgb(2,58,92);
+    float:left;line-height: 3.8em;text-align: center;
+}
+
+.rentals_li{
+    display: block;width:150px;
+    position:absolute;left:50%;margin-left: -180px;
+    height:50px;border-right:1px solid #ddd;color:rgb(2,58,92);float:left;line-height: 3.8em;text-align: center;
+}
+
+.rodos_img{
+    vertical-align: middle;margin-right:6px;
+}
+.villa_img{
+    vertical-align: middle;
+}
+.cyprous_img{
+    vertical-align: middle;margin-right:-4px;
+}
+.santorini_img{
+    vertical-align: middle;
+}
+.house_img{
+    vertical-align: middle;
+}
+.seaside_img{
+    vertical-align: middle;
+}
+.appartement_img{
+    vertical-align: middle;
+}
+.maindiv{
+    width:990px;left:50%;top:200px;margin-left: -480px;
+    position:relative;height:auto;background: transparent;
+}
+
+.request_title{
+    display: block;width:150px;height:50px;
+    position:absolute;left:50%;margin-left: -30px;
+    border-right:1px solid #ddd;color:rgb(2,58,92);float:left;line-height: 3.8em;text-align: center;
+}
+
+.entry_title{
+    display: block;width:150px;height:50px;
+    position:absolute;left:50%;margin-left: 120px;
+    border-right:1px solid #ddd;color:rgb(2,58,92);float:left;line-height: 3.8em;text-align: center;
+}
+
+.contact_title{
+    display: block;width:150px;height:50px;
+    position:absolute;left:50%;margin-left: 270px;
+    border-right:1px solid #ddd;color:rgb(2,58,92);float:left;line-height: 3.8em;text-align: center;
+}
+
+.quick_search{
+    height: 25px;
+    width: 260px;
+    font-style:italic;
+    padding-left: 4px;
+    border-radius:5px ;-moz-border-radius:5px; -webkit-border-radius:5px;
+    border-width: 0px;font-size:12px;margin: 0pt;border-style: solid;
+    border-color: rgb(204, 204, 204) rgb(153, 153, 153) rgb(153, 153, 153) rgb(204, 204, 204);
+
+    opacity: 0.5;
+    outline: medium          none;color:rgb(180,180,180);
+}
+
+
+.wrapper{
+    width: 100%;position:relative;background-image:none;
+    background-color:transparent;height:auto;width:100%;
+}
+
+/***************************************************/
 
 blockquote {background:#603d3d;border-left:10px solid #746464;margin:1.5em 10px;padding:.5em 10px;quotes:"\201C""\201D""\2018""\2019";}
 blockquote:before {color:black;content:open-quote;font-size:4em;line-height:.1em;margin-right:.25em;vertical-align:-.4em;}
@@ -1196,7 +1299,9 @@ padding-bottom: 10px;
 
 }
 
-
+.hidden{
+    display:none;
+}
 .searchSelect{
     width: 100px;
 }
@@ -1978,6 +2083,8 @@ background-size: cover;
 .language-div a{
     color:black;
     vertical-align: text-top;
+
+
 }
 .language-div:hover{
     overflow: visible;
@@ -2048,7 +2155,6 @@ border-bottom: 1px solid rgb(228, 228, 231);
     color:#333;
     font-size:11px;
     text-decoration:none;
-
 }
 
 
@@ -2060,6 +2166,14 @@ border-bottom: 1px solid rgb(228, 228, 231);
 .top-quick-link:visited{
     color:#333;
 }
+
+.top-menu-quick-links{
+    width:300px;
+    position:absolute;z-index:200;
+    left:438px;top:5px;
+
+}
+
 
 .top-menu-quick-links td{
     color:#333;
