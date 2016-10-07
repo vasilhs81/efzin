@@ -8,9 +8,10 @@ require_once("common.php");
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Efzin Rentals - Χανιά - Ενοικιάσεις Κατοικιών</title>
 	<meta name="Keywords" content="rentals in Chania,villas,ενοικιάσεις κατοικιών, villas rental,Γκαρσονιέρα,Οροφοδιαμέρισμα,Διαμέρισμα,Βίλα,Μεζονέτα,Μονοκατοικία" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS Files -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<link rel="stylesheet" type="text/css" href="css/bottom.css">
 	<link rel="stylesheet" type="text/css" href="css/grandTopMenu.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/loginform.css">-->
@@ -23,11 +24,13 @@ require_once("common.php");
 	<link rel="stylesheet"  href="autocomplete/autocomplete.css" type="text/css">
 
 
+
+
 	<!-- Scripts -->
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script src="ui/jquery-ui.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/restive.min.js"></script>
+
 
 	<?php
 
@@ -92,14 +95,20 @@ require_once("common.php");
 		</script>
 	<?php } ?>
 
+	<link rel="stylesheet" media="all"  type="text/css" href="css/restive.css">
+
+	<script type="text/javascript" src="js/restive.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('body').restive(
-				breakpoints: ['10000'],
-				classes: ['nb'],
+			$('body').restive({
+//				breakpoints: ['10000'],
+//				classes: ['nb'],
+				breakpoints: ['979'],
+				classes: ['css-small'],
 				turbo_classes: 'is_mobile=r_mobi,is_phone=r_phone,is_tablet=r_tablet,is_landscape=r_landscape',
 				force_dip: true
-			);
+			});
 		});
 	</script>
 
@@ -203,6 +212,18 @@ require_once("common.php");
 <!---------------------   Grand Destination Menu -------------------->
 <div id="content" class="content_div" >
 	<!--	rgb(2,58,92);-->
+	<ul class="small-menu">
+		<li title="<?=getTextByCode('HOME_TITLE')?>" >
+			<a  href="index.php"><?=getTextByCode('HOME_TEXT')?></a>
+		</li>
+
+		<li title="<?=getTextByCode('PROFIL_TITLE')?>" >
+			<a href="profil.php" ><?=getTextByCode('PROFIL_TEXT')?></a>
+		</li>
+
+	</ul>
+
+
 	<ul class="grandDestinationsMenu">
 
 		<li title="<?=getTextByCode('HOME_TITLE')?>" class="home_li">
@@ -216,9 +237,14 @@ require_once("common.php");
 		<li class="rentals_li">
 			<a href="javascript:void(0);" class="drop" ><?=getTextByCode('RENTALS_TEXT')?> <img id="im1"  /></a>
 
-			<div class="dropdown_4columns" >
+			<div class="dropdown_4columns" style="z-index: 10;" >
 
+				<!--<div class="col_4">
+					<h2>This is a heading title</h2>
+				</div>
+			-->
 				<div class="col_1">
+
 					<a class="inner-link" href="search.php?sr=CHANIA"><img width="48" height="16" src="images/blackchania.png">&nbsp; <?=getTextByCode('CHANIA')?></a>
 				</div>
 
@@ -230,20 +256,23 @@ require_once("common.php");
 					<a class="inner-link" href="search.php?sc=HOTEL"><img width="15" height="16" src="images/hotel-black.png">&nbsp; <?=getTextByCode('HOTELS')?></a>
 				</div>
 
-				<div class="col_1" style="display: none;" >
+
+
+				<div class="col_1">
 					<a class="inner-link" href="search.php?sr=RETHIMNO"><img width="48" height="16" src="images/blackrethymno.png">&nbsp; <?=getTextByCode('RETHIMNO')?></a>
 				</div>
 
-				<div class="col_2" >
+				<div class="col_2" style="display: none;">
 					<a class="inner-link"  href="search.php?sc=PLOT"><img width="22" height="22" src="images/plot1.png">&nbsp;<?=getTextByCode('PLOTS')?></a>
 				</div>
 
 				<div class="col_2">
-					<a class="inner-link" href="search.php?sr=SANTORINI"><img class="santorini_img" width="25" height="24" src="images/santorini.png"> <?=getTextByCode('SANTORINI')?></a>
+					<a class="inner-link" href="search.php?sr=SANTORINI"><img  width="25" height="24" src="images/santorini.png"> <?=getTextByCode('SANTORINI')?></a>
 				</div>
 
+
 				<div class="col_3">
-					<a class="inner-link" href="search.php?sc=HOUSE"><img class="house_img" width="20" height="22" src="images/house1.png">&nbsp;<?=getTextByCode('HOUSES')?></a>
+					<a class="inner-link" href="search.php?sc=HOUSE"><img  width="20" height="22" src="images/house1.png">&nbsp;<?=getTextByCode('HOUSES')?></a>
 				</div>
 
 				<div class="col_1">
@@ -251,12 +280,12 @@ require_once("common.php");
 				</div>
 
 				<div class="col_2">
-					<a class="inner-link" href="search.php?sr=RODOS"><img class="rodos_img" width="17" height="20" src="images/rodos.png">
+					<a class="inner-link" href="search.php?sr=RODOS"><img style="margin-right:6px;" width="17" height="20" src="images/rodos.png">
 						<?=getTextByCode('RODOS')?>&nbsp;  </a>
 				</div>
 
 				<div class="col_3">
-					<a class="inner-link" href="search.php?sc=VILLA"><img class="villa_img" width="36" height="20" src="images/villa3.png">&nbsp;<?=getTextByCode('VILLAS')?></a>
+					<a class="inner-link" href="search.php?sc=VILLA"><img width="36" height="20" src="images/villa3.png">&nbsp;<?=getTextByCode('VILLAS')?></a>
 				</div>
 
 				<div class="col_1">
@@ -264,27 +293,26 @@ require_once("common.php");
 				</div>
 
 				<div class="col_2">
-					<a class="inner-link" href="search.php?sr=CYPRUS"><img class="cyprous_img" width="28" height="17" src="images/blackcyprus.png">&nbsp; <?=getTextByCode('CYPRUS')?></a>
+					<a class="inner-link" href="search.php?sr=CYPRUS"><img style="margin-right:-4px;" width="28" height="17" src="images/blackcyprus.png">&nbsp; <?=getTextByCode('CYPRUS')?></a>
 				</div>
 
 				<div class="col_3">
-					<a class="inner-link" href="search.php?sc=SEASIDE"><img class="seaside_img" width="25" height="25" src="images/blackbeach1.png">&nbsp;<?=getTextByCode('SEASIDES')?></a>
+					<a class="inner-link" href="search.php?sc=SEASIDE"><img  width="25" height="25" src="images/blackbeach1.png">&nbsp;<?=getTextByCode('SEASIDES')?></a>
 				</div>
 
-				<div class="col_1" >
+				<div class="col_1" style="display: none">
 					&nbsp;
 				</div>
 
-				<div class="col_2" style="display: none;">
+				<div class="col_2" style="display: none">
 					&nbsp;
 				</div>
 
-				<div class="col_3" style="display: none;">
-					<a class="inner-link" href="search.php?sc=APARTMENT"><img class="appartement_img" width="10" height="20" src="images/apart.png">&nbsp; <?=getTextByCode('APARTMENTS')?></a>
+				<div class="col_3" style="display: none">
+					<a class="inner-link" href="search.php?sc=APARTMENT"><img  width="10" height="20" src="images/apart.png">&nbsp; <?=getTextByCode('APARTMENTS')?></a>
 				</div>
 				<!-- End 4 columns container -->
 			</div>
-
 		</li>
 
 		<li title="<?=getTextByCode('REQUEST_TITLE')?>" class="request_title">
@@ -304,7 +332,6 @@ require_once("common.php");
 <!--the rest of the page has background white-->
 
 <div id="wrapper" class="wrapper" >
-
 	<div id="mainDiv" class="maindiv">
 		<!--End of grand destination menu	-->
 		<div class="clear">&nbsp;</div>

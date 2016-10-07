@@ -7,62 +7,26 @@ body, ul, li {
 }
 */
 
+.small-menu{
+    display: none;
+}
 .grandDestinationsMenu {
+
     font-family:'Helvetica Neue', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
     background-repeat: no-repeat;
     list-style:none;
     width:100%;
-    /*margin-left:5px;*/
     height:50px;
     float:left;
     background: white;
     padding-top: 3px;
     padding-bottom: 3px;
     white-space: nowrap;
-    /*margin-bottom: 3px;*/
     border-top:1px solid #ddd;
     border-bottom:1px solid #ddd;
     border-collapse: collapse;
 
-    /*margin:30px auto 0px auto;*/
 
-    /*padding:0px 20px 0px 20px;*/
-
-    /* Rounded Corners */
-
-    /*-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;*/
-
-    /* Background color and gradients */
-
-    /*background: #014464;*/
-    /*background: #2d2d2d;*/
-
-    /*background: url(../images/bg.png);*/
-    /*background: -moz-linear-gradient(top, #0272a7, #013953);*/
-
-    /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7), to(#013953));*/
-
-    /* Borders */
-
-    /*border: 1px solid #ccc;*/
-    /*color:#0073ea;*/
-    /*display: inline-block;*/
-
-    /*position: absolute;*/
-    /*top:95px;
-    left:175px;*/
-    /*z-index: 1000;*/
-
-
-
-
-
-    /*overflow: hidden;*/
-    /*-moz-box-shadow:inset 0px 0px 1px #edf9ff;*/
-    /*-webkit-box-shadow:inset 0px 0px 1px #edf9ff;*/
-    /*box-shadow:inset 0px 0px 1px #edf9ff;*/
 }
 
 .grandDestinationsMenu li {
@@ -285,6 +249,11 @@ vertical-align: middle;
     float:left;
     text-align: left;
 }
+
+.inner-link img{
+    vertical-align: middle;
+}
+
 .inner-image{
     width: 30px;
     height:30px;
