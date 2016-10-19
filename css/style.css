@@ -35,7 +35,9 @@ body {line-height: 1;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
 
 }
-
+.logo_img-small{
+    display: none;
+}
 
 .logo_img{
     width:960px;left:50%;margin-left: -480px;position:absolute;

@@ -208,6 +208,151 @@ require_once("common.php");
 	<!-- End of Language Div -->
 </div>
 
+
+<div class="logo_img-small">
+	<a  href="index.php" class="logo_img_href">
+		<img src="images/logos/logo21_Aster8.png"  alt="Efzin" width="195"
+			 height="116" >
+	</a>
+
+	</form>
+	<!--	Top Icons Quick Lunch	-->
+
+	<table align="right" class="top-menu-quick-links"  border="0" cellspacing="5"> <!-- ***start of cart table ***-->
+
+		<!--   #@ -->
+		<td nowrap="nowrap" >
+			&nbsp;<a class="top-quick-link"  href="index.php" >
+				<img  alt="" border="0" height="9" width="13" src="images/top_icon_home.gif"/><?=getTextByCode('SMALL_HOME_PAGE')?></a></td>
+		<td nowrap="nowrap">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="profil.php" class="top-quick-link"><?=getTextByCode('SMALL_INFO')?></a></td>
+		<td nowrap="nowrap">&nbsp;&nbsp;|&nbsp;&nbsp;<a name="" ><img alt="" border="0" height="8" width="16" src="images/top_icon_net.gif"></a>
+			<a href="contact.php" class="top-quick-link"><?=getTextByCode('SMALL_CONTACT')?></a></td>
+		</tr>
+	</table>
+
+	<!------------------- Language Div ------------------->
+	<div class="language-div">
+		<?php
+		$rows=getLanguages();
+		$qs=preg_replace('/&?lang=\w+/','',basename($_SERVER['QUERY_STRING']));
+		if($qs!='')
+			$qs='&'.$qs;
+		if(!empty($_POST))
+			$_SESSION['POST']=$_POST;
+		?>
+		<a href="<?=PAGE?>?lang=<?=$rows[$LANG]['prefix'].$qs ?>"
+			><img src="images/<?=$rows[$LANG]['prefix']?>.png"
+				  alt="<?=ucfirst($rows[$LANG]['name'])?>"
+				  width="25" height="15" style="vertical-align: text-top;">
+			<?=mb_strtoupper($rows[$LANG]['prefix'])?> ▼
+		</a>
+		<?php
+		foreach($rows as $row){
+			if($row['index']!=$LANG) {
+				?>
+				<div class="clear8">&nbsp;</div>
+				<a href="<?=PAGE?>?lang=<?=$row['prefix'].$qs ?>"
+					><img src="images/<?=$row['prefix']?>.png" alt="<?=ucfirst($row['name'])?>"
+						  title="<?=ucfirst($row['name'])?>"
+						  width="25" height="15"/>
+					<?=mb_strtoupper($row['prefix'])?>
+				</a>
+			<?php }}?>
+
+	</div>
+	<!-- End of Language Div -->
+</div>
+
+
+<div class="logo_img">
+	<a  href="index.php" class="logo_img_href">
+		<img src="images/logos/logo21_Aster8.png"  alt="Efzin" width="195"
+			 height="116" >
+	</a>
+
+	<!--    Search form Div-->
+	<form action="search.php" method="POST" id="ff1" >
+		<input type="hidden" name="action" value="quickSearch"/>
+		<div class="<?= (PAGE=='index.php')? "search_div_index":"search_div_others" ?>">
+
+			<input type="text" autocomplete="on" name="keyword" id="sinput" size="20" value="<?=getTextByCode('QUICK_SEARCH')?>..."
+				   rel="<?=getTextByCode('QUICK_SEARCH')?>..."
+				   class="quick_search"
+				   onfocus="if(this.value==this.getAttribute('rel')){
+           this.value='';
+           $('#sicon').css('opacity','1');
+           $(this).css('color','black');
+           $(this).css('opacity','1');
+           }"
+
+				   onblur="if(this.value==this.getAttribute('rel') || this.value==''){
+           this.value=this.getAttribute('rel');
+           $('#sicon').css('opacity','0.4');
+           $(this).css('opacity','0.5');
+           }"
+				   onclick="if(this.value==this.getAttribute('rel')){
+           this.value='';
+           $('#sicon').css('opacity','1');
+           $(this).css('color','black');
+           $(this).css('opacity','1');
+           }"
+				   onKeyPress="return submitFormWithEnter(this,event);"
+				>
+		</div>
+		<a href="javascript:$('#ff1').submit();"
+		   class="search_icon_href"
+		   style="<?php if(PAGE=='index.php') echo 'top:230px;'; else echo 'top:110px;'?> ">
+			<img  src="images/search1.png" height="20" width="20" alt="<?=getTextByCode('SEARCH')?>" title="<?=getTextByCode('SEARCH')?>"
+				  id="sicon" /></a>
+	</form>
+	<!--	Top Icons Quick Lunch	-->
+
+	<table align="right" class="top-menu-quick-links"  border="0" cellspacing="5"> <!-- ***start of cart table ***-->
+
+		<!--   #@ -->
+		<td nowrap="nowrap" >
+			&nbsp;<a class="top-quick-link"  href="index.php" >
+				<img  alt="" border="0" height="9" width="13" src="images/top_icon_home.gif"/><?=getTextByCode('SMALL_HOME_PAGE')?></a></td>
+		<td nowrap="nowrap">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="profil.php" class="top-quick-link"><?=getTextByCode('SMALL_INFO')?></a></td>
+		<td nowrap="nowrap">&nbsp;&nbsp;|&nbsp;&nbsp;<a name="" ><img alt="" border="0" height="8" width="16" src="images/top_icon_net.gif"></a>
+			<a href="contact.php" class="top-quick-link"><?=getTextByCode('SMALL_CONTACT')?></a></td>
+		</tr>
+	</table>
+
+	<!------------------- Language Div ------------------->
+	<div class="language-div">
+		<?php
+		$rows=getLanguages();
+		$qs=preg_replace('/&?lang=\w+/','',basename($_SERVER['QUERY_STRING']));
+		if($qs!='')
+			$qs='&'.$qs;
+		if(!empty($_POST))
+			$_SESSION['POST']=$_POST;
+		?>
+		<a href="<?=PAGE?>?lang=<?=$rows[$LANG]['prefix'].$qs ?>"
+			><img src="images/<?=$rows[$LANG]['prefix']?>.png"
+				  alt="<?=ucfirst($rows[$LANG]['name'])?>"
+				  width="25" height="15" style="vertical-align: text-top;">
+			<?=mb_strtoupper($rows[$LANG]['prefix'])?> ▼
+		</a>
+		<?php
+		foreach($rows as $row){
+			if($row['index']!=$LANG) {
+				?>
+				<div class="clear8">&nbsp;</div>
+				<a href="<?=PAGE?>?lang=<?=$row['prefix'].$qs ?>"
+					><img src="images/<?=$row['prefix']?>.png" alt="<?=ucfirst($row['name'])?>"
+						  title="<?=ucfirst($row['name'])?>"
+						  width="25" height="15"/>
+					<?=mb_strtoupper($row['prefix'])?>
+				</a>
+			<?php }}?>
+
+	</div>
+	<!-- End of Language Div -->
+</div>
+
+
 <div class="clear8">&nbsp;</div>
 <!---------------------   Grand Destination Menu -------------------->
 <div id="content" class="content_div" >
@@ -219,6 +364,47 @@ require_once("common.php");
 
 		<li title="<?=getTextByCode('PROFIL_TITLE')?>" >
 			<a href="profil.php" ><?=getTextByCode('PROFIL_TEXT')?></a>
+		</li>
+
+		<li>
+			<a href="javascript:void(0);" onclick="$('#innerMenuId').toggle();"><?=getTextByCode('RENTALS_TEXT')?> <img id="im1"  /></a>
+			<ul style="display: none;" class="inner-small-menu" id="innerMenuId">
+				<li>
+					<a href="search.php?sc=PLOT"><?=getTextByCode('PLOTS')?></a>
+				</li>
+
+				<li>
+					<a href="search.php?sc=SEASIDE"><?=getTextByCode('SEASIDES')?></a>
+				</li>
+
+				<li >
+					<a href="search.php?sc=HOUSE"><?=getTextByCode('HOUSES')?></a>
+				</li>
+
+				<li >
+					<a href="search.php?sc=VILLA"><?=getTextByCode('VILLAS')?></a>
+				</li>
+
+				<li>
+					<a  href="search.php?sc=APARTMENT"><?=getTextByCode('APARTMENTS')?></a>
+				</li>
+
+				<li>
+					<a href="search.php?sc=HOTEL"><?=getTextByCode('HOTELS')?></a>
+				</li>
+			</ul>
+		</li>
+
+		<li title="<?=getTextByCode('REQUEST_TITLE')?>" >
+			<a  href="requestform.php" ><?=getTextByCode('REQUEST_TEXT')?></a>
+		</li>
+
+		<li title="<?=getTextByCode('ENTRY_TITLE')?>">
+			<a href="entryform.php"  ><?=getTextByCode('ENTRY_TEXT')?></a>
+		</li>
+
+		<li title="<?=getTextByCode('CONTACT_TITLE')?>" >
+			<a href="contact.php"><?=getTextByCode('CONTACT_TEXT')?></a>
 		</li>
 
 	</ul>
